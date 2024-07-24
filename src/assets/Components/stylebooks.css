@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Home Component Styles */
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #e9ecef;
+    text-align: center;
+  }
+  
+  .home h1 {
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between links */
+  }
+  
+  .menu-link {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .menu-link:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
+  .menu-link:active {
+    background-color: #00408d;
+    transform: scale(1); /* Ensure button doesn't remain enlarged */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .menu {
+      flex-direction: column;
+    }
+  }
+
+  /* General Styles */
+
+  
+  
+  /* NavBar Styles */
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #007bff;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 20px;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  /* ListBooks Styles */
+  .list-books-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list-books-container header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .no-books {
+    text-align: center;
+    color: #888;
+  }
+  
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .book-item {
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-item strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
